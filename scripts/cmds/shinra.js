@@ -33,10 +33,10 @@ async function getAIResponse(input, userName, userId, messageID) {
 
 module.exports = {
  config: {
- name: 'shinra',
+ name: 'ariel',
  author: 'shizuka junior',
  role: 0,
- aliase: ["🔥"],
+ aliase: ["❤️"],
  category: 'ai-chat',
  shortDescription: 'ai to ask anything',
  },
@@ -54,13 +54,13 @@ module.exports = {
  }
  const userName = ret[event.senderID].name;
  const { response, messageID } = await getAIResponse(input, userName, event.senderID, event.messageID);
- api.sendMessage(`🔥𝑆𝐻𝐼𝑁𝑅𝐴㉨𝐾𝑈𝑆𝐴𝐾𝐴𝐵𝐸🔥\n━━━━━━━━━━━━━━━━\n${response} 🔥\n━━━━━━━━━━━━━━━━`, event.threadID, messageID);
+ api.sendMessage(`𝐚𝐫𝐢𝐞𝐥 𝐚𝐜𝐤𝐞𝐫𝐦𝐚𝐧\n━━━━━━━━━━━━━━━━\n${response} 💦\n━━━━━━━━━━━━━━━━`, event.threadID, messageID);
  });
  },
  onChat: async function ({ api, event, message }) {
  const messageContent = event.body.trim().toLowerCase();
  if (messageContent.startsWith("shinra")) {
- const input = messageContent.replace(/^shinra\s*/, "").trim();
+ const input = messageContent.replace(/^ariel\s*/, "").trim();
  api.getUserInfo(event.senderID, async (err, ret) => {
  if (err) {
  console.error(err);
@@ -68,8 +68,8 @@ module.exports = {
  }
  const userName = ret[event.senderID].name;
  const { response, messageID } = await getAIResponse(input, userName, event.senderID, message.messageID);
- message.reply(`🔥𝑆𝐻𝐼𝑁𝑅𝐴㉨𝐾𝑈𝑆𝐴𝐾𝐴𝐵𝐸🔥\n━━━━━━━━━━━━━━━━\n${userName} , ${response} 🔥 \n━━━━━━━━━━━━━━━━\n `, messageID);
-api.setMessageReaction("🔥", event.messageID, () => {}, true);
+ message.reply(`𝐯𝐨𝐫𝐭𝐞𝐱 𝐛𝐨𝐭\n━━━━━━━━━━━━━━━━\n${userName} , ${response} 🔥 \n━━━━━━━━━━━━━━━━\n `, messageID);
+api.setMessageReaction("💦", event.messageID, () => {}, true);
 
  });
  }
