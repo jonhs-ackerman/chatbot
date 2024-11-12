@@ -31,7 +31,7 @@ module.exports = {
 			invalidPage: "Số trang không hợp lệ"
 		},
 		en: {
-			count: "Number of messages of members:",
+			count: "voici les mortels qui derangent dans le groupe\n•────•──────────•────•\n:",
 			endMessage: "Those who do not have a name in the list have not sent any messages.",
 			page: "Page [%1/%2]",
 			reply: "Reply to this message with the page number to view more",
