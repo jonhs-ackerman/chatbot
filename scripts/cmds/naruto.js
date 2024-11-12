@@ -45,7 +45,7 @@ module.exports = {
 
   config: {
 
-    name: 'naruto',
+    name: 'vortex',
 
     version: '1.1.1',
 
