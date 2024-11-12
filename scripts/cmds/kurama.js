@@ -1,16 +1,16 @@
 const axios = require('axios');
 
 const Prefixes = [
-  'renard', 
-  'démon',
-  'kyubi',
-  'KURAMA',
-  'kurama',
+  'rudeus', 
+  'vortex',
+  'blade',
+  'ariel',
+  'jonhs',
 ];
 
 module.exports = {
   config: {
-    name: "kurama",
+    name: "rudeus",
     version: 1.0,
     author: "OtinXSandip",
     longDescription: "AI",
@@ -29,7 +29,7 @@ module.exports = {
       }
       const prompt = event.body.substring(prefix.length).trim();
    if (!prompt) {
-        await message.reply("𝙋𝙪𝙩𝙖𝙞𝙣 𝙥𝙤𝙨𝙚 𝙩𝙖 𝙦𝙪𝙚𝙨𝙩𝙞𝙤𝙣... 😼");
+        await message.reply("🩸😕");
         return;
       }
 
