@@ -15,6 +15,6 @@ onChat: async function({
 	message,
 	getLang
 }) {
-	if (event.body && event.body.toLowerCase() == "prefix") return message.reply(" MON PREFIX EST [🌟]");
+	if (event.body && event.body.toLowerCase() == "prefix") return message.reply("---------------- » «» « ----------------\n mon prefix est 🩸+🩸---------------- » «» « ----------------\n si tu as un probleme avec une commande tape +help(nom de la commande) pour plus des details💁‍♂️");
 }
 };
