@@ -25,7 +25,7 @@ function formatFont(text) {
 
 module.exports = {
   config: {
-    name: "neuron",
+    name: "rudeus",
     aliases:[],
     version: "1.0",
     author: "cliff",
@@ -50,7 +50,7 @@ module.exports = {
       const response = await axios.get(`http://158.101.198.227:8609/gpt11?ask=${encodeURIComponent(user)}`);
 
       const responseData = response.data.response;
-      const baby = `𝗚𝗣𝗧-𝟰 (NEURONSPIKE)\n▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱\n${responseData}`;
+      const baby = `𝗚𝗣𝗧-𝟰 (rudeus vortex)\n▱▱▱▱▱▱▱▱▱▱▱▱▱▱▱\n${responseData}`;
       api.editMessage(baby, cliff.messageID);
     } catch (err) {
       console.error(err);
