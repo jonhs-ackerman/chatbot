@@ -31,7 +31,7 @@ module.exports = {
  const response = await axios.get(apiUrl);
  const lyrics = response.data.lyrics;
  if (!lyrics) {
- api.sendMessage("Sorry, lyrics not found!", event.threadID, event.messageID);
+ api.sendMessage("je parie que ta musique est pouritte et il a pas de paroles 😹", event.threadID, event.messageID);
  return;
  }
  api.sendMessage(lyrics, event.threadID, event.messageID);
