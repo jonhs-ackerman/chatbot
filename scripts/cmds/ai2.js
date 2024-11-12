@@ -28,7 +28,7 @@ async function getAIResponse(input, userId, messageID) {
         { url: 'https://ai-chat-gpt-4-lite.onrender.com/api/hercai', params: { question: input } }
     ];
 
-    let response = "Ouaip 😐";
+    let response = "💁💁💁";
     let currentIndex = 0;
 
     for (let i = 0; i < services.length; i++) {
@@ -60,7 +60,7 @@ module.exports = {
     onStart: async function ({ api, event, args }) {
         const input = args.join(' ').trim();
         if (!input) {
-            api.sendMessage(`🌐😐`, event.threadID, event.messageID);
+            api.sendMessage(`💁💁💁💁`, event.threadID, event.messageID);
             return;
         }
 
