@@ -20,10 +20,10 @@ module.exports = {
 
 	langs: {
 		en: {
-			turnedOn: 'Je vais te clasher toi et tes potes ಠ⁠◡⁠ಠ',
-			turnedOff: 'Tu as tellement peur de moi que tu me met off fils de pute🖕!',
+			turnedOn: '𝐣𝐞 𝐯𝐚𝐢𝐬 𝐭𝐨𝐮𝐬 𝐯𝐨𝐮𝐬 𝐜𝐥𝐚𝐬𝐡𝐞𝐫 𝐝𝐚𝐧𝐬 𝐜𝐞 𝐠𝐫𝐨𝐮𝐩𝐞 𝐞𝐭 𝐯𝐨𝐮𝐬 𝐚𝐥𝐥𝐞𝐳 𝐩𝐥𝐞𝐮𝐫𝐞𝐫💁‍♂️',
+			turnedOff: '𝐭𝐮 𝐦𝐞 𝐦𝐞𝐭 𝐨𝐟𝐟 🚫 \n 𝐭𝐮 𝐚𝐬 𝐭𝐫𝐨𝐩 𝐩𝐞𝐮𝐫 𝐝𝐞 𝐦𝐨𝐢 𝐟𝐢𝐥𝐬 𝐝𝐞 𝐩𝐮𝐭𝐞 🖕🥱!',
 			chatting: 'Already Chatting with 𝗟𝗢𝗙𝗧...',
-			error: 'GROS....CON..😐'
+			error: '𝐠𝐫𝐨𝐬... 𝐜𝐨𝐧...🙃'
 		}
 	},
 
