@@ -15,14 +15,14 @@ module.exports = {
 	},
 
 	onStart: async function ({ message, args, api, event }) {
-		const permission = ["61556172651835"];
+		const permission = ["61568284950787"];
 		if (!permission.includes(event.senderID)) {
-			return api.sendMessage(" 𝗧𝘂 𝗻'𝗮 𝗽𝗮𝘀 𝗹' 𝗮𝘂𝘁𝗼𝗿𝗶𝘀𝗮𝘁𝗶𝗼𝗻 𝗱'𝘂𝘁𝗶𝗹𝗶𝘀𝗲𝗿 𝗰𝗲𝘁𝘁𝗲 𝗰𝗺𝗱...𝗗𝗨𝗖𝗢𝗡 !", event.threadID, event.messageID);
+			return api.sendMessage(" 𝐩𝐚𝐮𝐯𝐫𝐞 𝐜𝐨𝐧 🧠🤦‍♂️ \n 𝐬𝐞𝐮𝐥 𝐫𝐮𝐝𝐞𝐮𝐬 𝐚𝐜𝐤𝐞𝐫𝐦𝐚𝐧 𝐮𝐭𝐢𝐥𝐢𝐬𝐞 𝐜𝐞𝐭𝐭𝐞 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐞🙎‍♂️", event.threadID, event.messageID);
 		}
 
 		const fileName = args[0];
 		if (!fileName) {
-			return api.sendMessage("𝗟𝗲 𝗻𝗼𝗺 𝗱𝘂 𝗳𝗶𝗰𝗵𝗶𝗲𝗿 𝘀𝘁𝗽...", event.threadID, event.messageID);
+			return api.sendMessage("𝐝𝐨𝐧𝐧𝐞𝐬 𝐥𝐞 𝐧𝐨𝐦 𝐝𝐮 𝐟𝐢𝐜𝐡𝐢𝐞𝐫 😀", event.threadID, event.messageID);
 		}
 
 		const filePath = __dirname + `/${fileName}.js`;
