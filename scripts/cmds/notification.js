@@ -4,11 +4,40 @@ module.exports = {
 	config: {
 		name: "notification",
 		aliases: ["notify", "noti"],
-		version: "1.7",
+		version: "1.6",
 		author: "NTKhang",
 		countDown: 5,
 		role: 2,
-		description: {
+		shortDescription: {
+			vi: "Gửi thông báo từ admin đến all box",
+			en: "Send notification from admin to all box"
+		},
+		longDescription: {
+			vi: "Gửi thông báo từ admin đến all box",
+			en: "Send notification from admin to all box"
+		},
+		category: "owner",
+		guide: {
+			en: "{pn} <tin nhắn>"
+		},
+		envConfig: {
+			delayPerGroup: 250
+		}
+const { getStreamsFromAttachment } = global.utils;
+
+module.exports = {
+	config: {
+		name: "notification",
+		aliases: ["notify", "noti"],
+		version: "1.6",
+		author: "NTKhang",
+		countDown: 5,
+		role: 2,
+		shortDescription: {
+			vi: "Gửi thông báo từ admin đến all box",
+			en: "Send notification from admin to all box"
+		},
+		longDescription: {
 			vi: "Gửi thông báo từ admin đến all box",
 			en: "Send notification from admin to all box"
 		},
@@ -30,11 +59,11 @@ module.exports = {
 			errorSendingNotification: "Có lỗi xảy ra khi gửi đến %1 nhóm:\n%2"
 		},
 		en: {
-			missingMessage: "𝙑𝙚𝙪𝙞𝙡𝙡𝙚𝙧 𝙨𝙖𝙞𝙨𝙞𝙧 𝙫𝙤𝙩𝙧𝙚 𝙢𝙚𝙨𝙨𝙖𝙜𝙚 𝙥𝙤𝙪𝙧 𝙦𝙪𝙚 𝙟𝙚 𝙥𝙪𝙞𝙨𝙨𝙚 𝙡'𝙚𝙣𝙫𝙤𝙮𝙚𝙧 𝙖𝙪𝙭 𝙫𝙞𝙡𝙡𝙖𝙜𝙚𝙤𝙞𝙨",
-			notification: "𝐦𝐚𝐢𝐭𝐫𝐞 🍁𝐫𝐮𝐝𝐞𝐮𝐬 𝐚𝐜𝐤𝐞𝐫𝐦𝐚𝐧🍁 𝐞𝐬𝐭 𝐚 𝐥'𝐚𝐩𝐩𝐚𝐫𝐞𝐢𝐥 𝐜𝐡𝐞𝐫𝐬 𝐦𝐨𝐫𝐭𝐞𝐥𝐬 💁‍♂️ \n[𝙋𝙤𝙪𝙧 𝙡𝙪𝙞 𝙧𝙚𝙥𝙤𝙣𝙙𝙧𝙚 𝙚𝙘𝙧𝙞𝙫𝙚𝙯 (+𝐜𝐚𝐥𝐥𝐚𝐝 et  𝐯𝐨𝐭𝐫𝐞 𝐦𝐞𝐬𝐬𝐚𝐠𝐞)..]",
-			sendingNotification: "𝙅'𝙚𝙣𝙫𝙤𝙞𝙚 𝙫𝙤𝙩𝙧𝙚 𝙢𝙚𝙨𝙨𝙖𝙜𝙚 𝙖𝙪𝙭 %1 𝙫𝙞𝙡𝙡𝙖𝙜𝙚𝙨... 𝙑𝙚𝙪𝙞𝙡𝙡𝙚𝙯 𝙥𝙖𝙩𝙞𝙚𝙣𝙩𝙚𝙧",
-			sentNotification: "✅𝙈𝙚𝙨𝙨𝙖𝙜𝙚 𝙚𝙣𝙫𝙤𝙮𝙚 𝙖𝙪𝙭 %1 𝙫𝙞𝙡𝙡𝙖𝙜𝙚𝙨 𝙖𝙫𝙚𝙘 𝙨𝙪𝙘𝙘𝙚𝙨",
-			errorSendingNotification: "𝙀𝙘𝙝𝙚𝙘 𝙙𝙚 𝙡'𝙚𝙣𝙫𝙤𝙞 𝙙𝙚 𝙫𝙤𝙩𝙧𝙚 𝙢𝙚𝙨𝙨𝙖𝙜𝙚 𝙖 %1 𝙫𝙞𝙡𝙡𝙖𝙜𝙚(𝙨):\n%2"
+			missingMessage: "Please enter the message you want to send to all groups",
+			notification: "╔═════  ࿇  ═════╗\n 💦𝗥𝗨𝗗𝗘𝗨𝗦💦 \n╚════════════╝\n *╔═══❖•ೋ° °ೋ•❖═══╗*𝘂𝗻 𝗺𝗲𝘀𝘀𝗮𝗴𝗲 𝗱𝗲\n |𝗹𝗮 𝗽𝗮𝗿𝘁 𝗱𝗲 𝗹'𝗮𝗱𝗺𝗶𝗻 \n |𝗽𝗼𝘂𝗿 𝗿𝗲𝗽𝗼𝗻𝗱𝗿𝗲 \n |𝘂𝘁𝗶𝗹𝗶𝘀𝗲𝘀 𝗹𝗮 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝗲 \n |💦𝗖𝗔𝗟𝗟𝗔𝗗💦\n*╚═══❖•ೋ° °ೋ•❖═══╝*",
+			sendingNotification: "Start sending notification from admin bot to %1 chat groups",
+			sentNotification: "✅ Sent notification to %1 groups successfully",
+			errorSendingNotification: "An error occurred while sending to %1 groups:\n%2"
 		}
 	},
 
@@ -43,7 +72,7 @@ module.exports = {
 		if (!args[0])
 			return message.reply(getLang("missingMessage"));
 		const formSend = {
-			body: `${getLang("notification")}\n━━━━━━━━❪❂❫━━━━━━━━\n${args.join(" ")}\n═════════════════\nvortex bot 💁‍♂️`,
+			body: `${getLang("notification")}\n❛ ━━━━━━･❪ ❁ ❫ ･━━━━━━ ❜\n${args.join(" ")}`,
 			attachment: await getStreamsFromAttachment(
 				[
 					...event.attachments,
@@ -97,4 +126,54 @@ module.exports = {
 			msg += getLang("errorSendingNotification", sendError.reduce((a, b) => a + b.threadIDs.length, 0), sendError.reduce((a, b) => a + `\n - ${b.errorDescription}\n  + ${b.threadIDs.join("\n  + ")}`, ""));
 		message.reply(msg);
 	}
-};
+};￼Enter	},
+
+	langs: {
+		vi: {
+			missingMessage: "Vui lòng nhập tin nhắn bạn muốn gửi đến tất cả các nhóm",
+			notification: "Thông báo từ admin bot đến tất cả nhóm chat (không phản hồi tin nhắn này)",
+			sendingNotification: "Bắt đầu gửi thông báo từ admin bot đến %1 nhóm chat",
+			sentNotification: "✅ Đã gửi thông báo đến %1 nhóm thành công",
+			errorSendingNotification: "Có lỗi xảy ra khi gửi đến %1 nhóm:\n%2"
+		},
+		en: {
+			missingMessage: "Please enter the message you want to send to all groups",
+			notification: "╔═════  ࿇  ═════╗\n 💦𝗥𝗨𝗗𝗘𝗨𝗦💦 \n╚════════════╝\n *╔═══❖•ೋ° °ೋ•❖═══╗*𝘂𝗻 𝗺𝗲𝘀𝘀𝗮𝗴𝗲 𝗱𝗲\n |𝗹𝗮 𝗽𝗮𝗿𝘁 𝗱𝗲 𝗹'𝗮𝗱𝗺𝗶𝗻 \n |𝗽𝗼𝘂𝗿 𝗿𝗲𝗽𝗼𝗻𝗱𝗿𝗲 \n |𝘂𝘁𝗶𝗹𝗶𝘀𝗲𝘀 𝗹𝗮 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝗲 \n |💦𝗖𝗔𝗟𝗟𝗔𝗗💦\n*╚═══❖•ೋ° °ೋ•❖═══╝*",
+			sendingNotification: "Start sending notification from admin bot to %1 chat groups",
+			sentNotification: "✅ Sent notification to %1 groups successfully",
+			errorSendingNotification: "An error occurred while sending to %1 groups:\n%2"
+		}
+	},
+
+	onStart: async function ({ message, api, event, args, commandName, envCommands, threadsData, getLang }) {
+		const { delayPerGroup } = envCommands[commandName];
+		if (!args[0])
+			return message.reply(getLang("missingMessage"));
+		const formSend = {
+			body: `${getLang("notification")}\n❛ ━━━━━━･❪ ❁ ❫ ･━━━━━━ ❜\n${args.join(" ")}`,
+			attachment: await getStreamsFromAttachment(
+					...event.attachments,
+					...(event.messageReply?.attachments || [])
+				].filter(item => ["photo", "png", "animated_image", "video", "audio"].includes(item.type))
+			)
+		};
+
+		const allThreadID = (await threadsData.getAll()).filter(t => t.isGroup && t.members.find(m => m.userID == api.getCurrentUserID())?.inGroup);
+		message.reply(getLang("sendingNotification", allThreadID.length));
+
+		let sendSucces = 0;
+		const sendError = [];
+		const wattingSend = [];
+
+		for (const thread of allThreadID) {
+			const tid = thread.threadID;
+			try {
+				wattingSend.push({
+					threadID: tid,
+					pending: api.sendMessage(formSend, tid)
+				});
+				await new Promise(resolve => setTimeout(resolve, delayPerGroup));
+			}
+			catch (e) {
+				sendError.push(tid);
+			}
