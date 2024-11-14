@@ -67,7 +67,7 @@ module.exports = {
         }
         const userName = ret[event.senderID].name;
         const { response, messageID } = await getAIResponse(input, userName, event.senderID, message.messageID);
-        message.reply(`✰. . 💦VOICI TA REPONSE💦 . .✰ \n⧠⧠⧠⧠⧠ .✰.✰. ⧠⧠⧠⧠⧠\n\n${response}\n\n⧠⧠⧠⧠⧠ .✰.✰. ⧠⧠⧠⧠⧠\n𝘀𝗲𝗻𝗱𝗲𝗿 𝗻𝗮𝗺𝗲: ${userName} 💬\n━━━━━━━━━━━━━━━━━━`, messageID);
+        message.reply(`✰. . 💦VOICI TA REPONSE💦 . .✰ \n✧══════•❁❀❁•══════✧\n\n${response}\n\n•───────────────────•\n───※ ·❆· ※───\n|𝐡𝐞𝐲 𝐬𝐢𝐦𝐩𝐥𝐞 𝐦𝐨𝐫𝐭𝐞𝐥💁‍♂️\n𝐮𝐭𝐢𝐥𝐢𝐬𝐞𝐬 𝐥𝐚 𝐜𝐨𝐦𝐦𝐚𝐧𝐝𝐞 \n |🍁#𝗮𝗿𝗶𝗲𝗹𝗴𝗰🍁\n |𝐩𝐨𝐮𝐫 𝐫𝐞𝐣𝐨𝐢𝐧𝐝𝐫𝐞 \n |𝐥𝐞 𝐠𝐫𝐨𝐮𝐩𝐞 𝐝𝐞 𝐦𝐨𝐧 𝐦𝐚𝐢𝐭𝐫𝐞 \n∴━━━✿━━━∴\n\n𝘀𝗲𝗻𝗱𝗲𝗿 𝗻𝗮𝗺𝗲: ${userName} 💬\n━━━━━━━━━━━━━━━━━━`, messageID);
 api.setMessageReaction("🥴", event.messageID, () => {}, true);
 
       });
