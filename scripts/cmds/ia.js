@@ -18,7 +18,7 @@ async function getAIResponse(input, userId, messageID) {
  { url: 'https://ai-chat-gpt-4-lite.onrender.com/api/hercai', params: { question: input } }
  ];
 
- let response = ".... Désolé mais je ne sais pas....";
+ let response = ".... 🩸🌿😕🚭....";
  let currentIndex = 0;
 
  for (let i = 0; i < services.length; i++) {
@@ -36,7 +36,7 @@ async function getAIResponse(input, userId, messageID) {
 
 module.exports = {
  config: {
- name: 'ia',
+ name: 'jonhs',
  author: 'Arn',
  role: 0,
  category: 'AI',
@@ -88,10 +88,10 @@ const fonts = {
  },
  onChat: async function ({ event, message }) {
  const messageContent = event.body.trim().toLowerCase();
- if (messageContent.startsWith("ia")) {
- const input = messageContent.replace(/^ia\*/, "").trim();
+ if (messageContent.startsWith("jonhs")) {
+ const input = messageContent.replace(/^jonhs\*/, "").trim();
  const { response, messageID } = await getAIResponse(input, event.senderID, message.messageID);
- message.reply( `𝙄𝙉𝙏𝙀𝙇𝙇𝙄𝙂𝙀𝙉𝘾𝙀 𝘼𝙍𝙏𝙄𝙁𝙄𝘾𝙄𝙀𝙇𝙇𝙀\n━━━━━━━━━━━━━━━━\n${response} ﹏✏️`, messageID);
+ message.reply( `𝘃𝗼𝗿𝘁𝗲𝘅 𝗮𝗶\n======== • ✠ • ========\n${response} ﹏✏️`, messageID);
  }
  }
   }
