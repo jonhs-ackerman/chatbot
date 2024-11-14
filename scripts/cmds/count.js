@@ -30,8 +30,8 @@ module.exports = {
 			yourResult: "Bạn đứng hạng %1 và đã gửi %2 tin nhắn trong nhóm này",
 			invalidPage: "Số trang không hợp lệ"
 		},
-		en: {
-			count: "voici les mortels qui derangent dans le groupe\n•────•──────────•────•\n:",
+		en:
+			count: "╭───── • ◆ • ─────𝐯𝐨𝐢𝐜𝐢 𝐥𝐚 𝐥𝐢𝐬𝐭𝐞 𝐝𝐞𝐬 𝐝𝐞𝐫𝐚𝐧𝐠𝐞𝐮𝐫𝐬 😀\n╰──────•◈•──────\n:",
 			endMessage: "Those who do not have a name in the list have not sent any messages.",
 			page: "Page [%1/%2]",
 			reply: "Reply to this message with the page number to view more",
