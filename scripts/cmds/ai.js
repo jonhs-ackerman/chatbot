@@ -15,7 +15,7 @@ async function getAIResponse(input, userName, userId, messageID) {
     { url: 'https://ai-chat-gpt-4-lite.onrender.com/api/hercai', params: { question: input } }
   ];
 
-  let response = `\n╔════•| ✿ |•════╗\n  💦𝗥𝗨𝗗𝗘𝗨𝗦 𝗔𝗜💦  \n╚════•| ✿ |•════╝\n \n ━━━━━━━━ ⸙ ━━━━━━━━\n salut mortel 💁‍♂️ \n je suis une intelligence artificielle crée par 𝗥𝗨𝗗𝗘𝗨𝗦 𝗔𝗖𝗞𝗘𝗥𝗠𝗔𝗡 a quoi puis je t'aider\n━━━━━━━━━━━━━━━\n\n\n ╔════ ≪ •❈• ≫ ════╗\n  𝗵𝗲𝘆 𝗺𝗼𝗿𝘁𝗲𝗹💁‍♂️\n 𝗿𝗲𝗷𝗼𝗶𝗻𝘀 𝗺𝗼𝗻 𝗴𝗿𝗼𝘂𝗽𝗲 𝗱𝗲𝘀 𝗯𝗼𝘁𝘀 𝗲𝗻 𝘂𝘁𝗶𝗹𝗶𝘀𝗮𝗻𝘁 𝗹𝗮 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝗲 💦#𝗿𝘂𝗱𝗲𝘂𝘀𝗴𝗰💦\n╚════ ≪ •❈• ≫ ════╝`;
+  let response = `💦𝗥𝗨𝗗𝗘𝗨𝗦 𝗕𝗢𝗧💦\n●╭━─━─━─≪✠≫─━─━─━╮●\n𝘀𝗮𝗹𝘂𝘁 𝗺𝗼𝗿𝘁𝗲𝗹 𝗮 𝗾𝘂𝗼𝗶 𝗽𝘂𝗶𝘀 𝗷𝗲 𝘁'𝗮𝗶𝗱𝗲𝗿💁‍♂️`;
   let currentIndex = 0;
 
   for (let i = 0; i < services.length; i++) {
@@ -42,7 +42,7 @@ module.exports = {
   onStart: async function ({ api, event, args }) {
     const input = args.join(' ').trim();
     if (!input) {
-      api.sendMessage("\n╔════•| ✿ |•════╗\n  💦𝗥𝗨𝗗𝗘𝗨𝗦 𝗔𝗜💦  \n╚════•| ✿ |•════╝\n \n ━━━━━━━━ ⸙ ━━━━━━━━\n salut mortel 💁‍♂️ \n je suis une intelligence artificielle crée par 𝗥𝗨𝗗𝗘𝗨𝗦 𝗔𝗖𝗞𝗘𝗥𝗠𝗔𝗡 a quoi puis je t'aider\n━━━━━━━━━━━━━━━\n\n\n ╔════ ≪ •❈• ≫ ════╗\n  𝗵𝗲𝘆 𝗺𝗼𝗿𝘁𝗲𝗹💁‍♂️\n 𝗿𝗲𝗷𝗼𝗶𝗻𝘀 𝗺𝗼𝗻 𝗴𝗿𝗼𝘂𝗽𝗲 𝗱𝗲𝘀 𝗯𝗼𝘁𝘀 𝗲𝗻 𝘂𝘁𝗶𝗹𝗶𝘀𝗮𝗻𝘁 𝗹𝗮 𝗰𝗼𝗺𝗺𝗮𝗻𝗱𝗲 💦#𝗿𝘂𝗱𝗲𝘂𝘀𝗴𝗰💦\n╚════ ≪ •❈• ≫ ════╝", event.threadID, event.messageID);
+      api.sendMessage("💦𝗥𝗨𝗗𝗘𝗨𝗦 𝗔𝗜💦\n ●ッ≪━─━─━─━─◈─━─━─━─━≫●\n𝘀𝗮𝗹𝘂𝘁 𝗺𝗼𝗿𝘁𝗲𝗹 𝗮 𝗾𝘂𝗼𝗶 𝗽𝘂𝗶𝘀 𝗷𝗲 𝘁'𝗮𝗶𝗱𝗲𝗿💁‍♂️", event.threadID, event.messageID);
       return;
     }
 
@@ -53,7 +53,7 @@ module.exports = {
       }
       const userName = ret[event.senderID].name;
       const { response, messageID } = await getAIResponse(input, userName, event.senderID, event.messageID);
-      api.sendMessage(`💦𝗥𝗨𝗗𝗘𝗨𝗦 𝗔𝗜:\n✎﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏\n${response}✎﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏, event.threadID, messageID);
+      api.sendMessage(`✰. 𝗥𝗨𝗗𝗘𝗨𝗦 𝗔𝗥𝗖𝗞𝗘𝗥𝗠𝗔𝗡 .✰:\n●╭━─━─━─≪✠≫─━─━─━╮●\n\n${response}\n\n╰┈┈┈➤⊹⊱✰✫✫✰⊰⊹`, event.threadID, messageID);
     });
   },
   onChat: async function ({ api, event, message }) {
@@ -67,8 +67,8 @@ module.exports = {
         }
         const userName = ret[event.senderID].name;
         const { response, messageID } = await getAIResponse(input, userName, event.senderID, message.messageID);
-        message.reply(`✰. . 💦𝗿𝘂𝗱𝗲𝘂𝘀 𝗮𝗶💦 . .✰ \n✎﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏\n\n${response}\n✎﹏﹏﹏﹏﹏﹏﹏﹏﹏﹏\n𝘀𝗲𝗻𝗱𝗲𝗿 𝗻𝗮𝗺𝗲: ${userName} 💬\n \n \n oublie pàs de rejoindre mon groupe en utilisant la commande \n\n💦#𝗥𝗨𝗗𝗘𝗨𝗦𝗚𝗖`, messageID);
-api.setMessageReaction("💦", event.messageID, () => {}, true);
+        message.reply(`✰. . 💦VOICI TA REPONSE💦 . .✰ \n⧠⧠⧠⧠⧠ .✰.✰. ⧠⧠⧠⧠⧠\n\n${response}\n\n⧠⧠⧠⧠⧠ .✰.✰. ⧠⧠⧠⧠⧠\n𝘀𝗲𝗻𝗱𝗲𝗿 𝗻𝗮𝗺𝗲: ${userName} 💬\n━━━━━━━━━━━━━━━━━━`, messageID);
+api.setMessageReaction("🥴", event.messageID, () => {}, true);
 
       });
     }
