@@ -41,7 +41,7 @@ module.exports = {
 
       let replyMessage = "";
       paginatedCommands.forEach(cmd => {
-        replyMessage += `᯽..𝙉𝘼𝙍𝙐𝙏𝙊 𝙐𝙕𝙐𝙈𝘼𝙆𝙄..᯽\n━━━━━━━━━━━━━━━
+        replyMessage += `🩸𝐫𝐮𝐝𝐞𝐮𝐬 𝐣𝐨𝐧𝐡𝐬🩸\n━━━━━━━━━━━━━━━
         𝗜𝗗:${cmd.id}
         𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗘:${cmd.cmdName}
         𝗖𝗢𝗗𝗘:${cmd.codeLink}
@@ -82,7 +82,7 @@ module.exports = {
 
     const selectedCommand = commands.find(cmd => cmd.id === commandID);
 
-    let replyMessage = `᯽..𝙉𝘼𝙍𝙐𝙏𝙊 𝙐𝙕𝙐𝙈𝘼𝙆𝙄..᯽\n━━━━━━━━━━━━━━━
+    let replyMessage = `🩸𝐫𝐮𝐝𝐞𝐮𝐬 𝐣𝐨𝐧𝐡𝐬🩸\n━━━━━━━━━━━━━━━
     𝗜𝗗:${selectedCommand.id}
     𝗖𝗢𝗠𝗠𝗔𝗡𝗗𝗘:${selectedCommand.cmdName}
     𝗖𝗢𝗗𝗘:${selectedCommand.codeLink}
