@@ -12,14 +12,14 @@
 	"antiInbox": false,
 	"language": "en",
 	"notesLanguage": "change to your language with ISO 639-1 code, available languages: vi (Vietnamese), en (English)",
-	"nickNameBot": "★💦𝐑𝐔𝐃𝐄𝐔𝐒 𝐉𝐎𝐍𝐇𝐒💦★",
-	"prefix": "#",
+	"nickNameBot": "㊬C̶L̶O̶V̶E̶R̶ A̶I̶㊬",
+	"prefix": "¥",
 	"adminOnly": {
 		"enable": false,
 		"ignoreCommand": []
 	},
 	"adminBot": [
-       "61568284950787"],
+       "61559205854187"],
 
 	"whiteListMode": {
 		"enable": false,
